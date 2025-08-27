@@ -1,22 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bdeshi Deals</title>
     <!-- Daisy UI | TailwindCSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
     <header class="shadow py-3">
-        <div class="flex justify-center items-center gap-2">
+      <div class="flex justify-center items-center gap-2">
         <img src="./assets/logo.png" alt="Logo" class="w-12" />
         <div>
-            <h2 class="text-2xl text-pink-500">Bdeshi <span class="font-bold">Deals</span></h2>
-            <p class="text-sm text-gray-500">Cheap Price , Best Quality</p>
+          <h2 class="text-2xl text-pink-500">
+            Bdeshi <span class="font-bold">Deals</span>
+          </h2>
+          <p class="text-sm text-gray-500">Cheap Price , Best Quality</p>
         </div>
-    </div>
+      </div>
     </header>
-</body>
+    <main class="bg-gray-100">
+      <!-- <section id="banner" class="w-full h-[500px] bg-pink-100"></section> -->
+
+      <section
+        id="porducts-container"
+        class="w-11/12 py-10 mx-auto grid grid-cols-12 gap-8"
+      >
+        <section id="product-box" class="col-span-9">
+          <div class="kitchen">
+            <h1 class="text-2xl font-bold mb-5">Kitchenware</h1>
+
+            <div class="kitchen-items grid grid-cols-3 gap-5">
+              <!-- product card 1  -->
+              <div id="card-1" class="card bg-base-100 shadow-sm">
+                <figure class="bg-gray-200 m-5 rounded-xl">
+                  <img
+                    src="./assets/kitchen-1.png"
+                    alt="kitchen-1"
+                    class="rounded-xl py-5"
+                  />
+                </figure>
+                <div class="card-body text-center items-center">
+                  <h2 id="card-title-1" class="font-bold text-xl">K. Accessories1</h2>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p class="text-gray-500">
+                    <span class="card-price-1">150.40</span> TK
+                  </p>
+                </div>
+                <div class="m-5">
+                  <button
+                    id="cart-btn-1"
+                    class="btn bg-pink-500 text-white btn-block card-btn"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- product card 2  -->
+              <div id="card-2" class="card bg-base-100 shadow-sm">
+                <figure class="bg-gray-200 m-5 rounded-xl">
+                  <img
+                    src="./assets/kitchen-2.png"
+                    alt="kitchen-2"
+                    class="rounded-xl py-5"
+                  />
+                </figure>
+                <div class="card-body text-center items-center">
+                  <h2 id="card-title-2" class="font-bold text-xl">K. Accessories2</h2>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p class="text-gray-500">
+                    <span class="card-price-1">250.40</span> TK
+                  </p>
+                </div>
+                <div class="m-5">
+                  <button
+                    id="cart-btn-2"
+                    class="btn bg-pink-500 text-white btn-block card-btn"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <!-- product card 3  -->
+              <div id="card-3" class="card bg-base-100 shadow-sm">
+                <figure class="bg-gray-200 m-5 rounded-xl">
+                  <img
+                    src="./assets/kitchen-3.png"
+                    alt="kitchen-3"
+                    class="rounded-xl py-5"
+                  />
+                </figure>
+                <div class="card-body text-center items-center">
+                  <h2 id="card-title-3" class="font-bold text-xl">K. Accessories3</h2>
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <p class="text-gray-500">
+                    <span class="card-price-1">750.40</span> TK
+                  </p>
+                </div>
+                <div class="m-5">
+                  <button
+                    id="cart-btn-3"
+                    class="btn bg-pink-500 text-white btn-block card-btn"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside id="cart-box" class="col-span-3">
+          
+        </aside>
+      </section>
+    </main>
+  </body>
 </html>
