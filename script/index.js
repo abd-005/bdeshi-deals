@@ -45,6 +45,13 @@ getElement("product-box").addEventListener("click", function(e){
     const currentQuantity = Number(quantity) + 1;
 
     getElement("total-quantity").innerText = currentQuantity;
+
+    const clearCart = getElement("btn-clear");
+    clearCart.addEventListener("click", function(){
+      cartContainer.innerHTML = ``
+      getElement("total-price").innerText = '0';
+      getElement("total-quantity").innerText = '0';
+    })
   }})
 
    
